@@ -2,7 +2,13 @@
   .job
     %h2= @job.title
     %p= @job.description
-    %p= @job.company
+    %p
+    Company
+    = @job.company
+    %p
+    Submitted by
+    = @job.user.email
+    %p= @job.created_at
     %button.btn.btn-default= link_to "Apply for Job", @job.url
 
 #links
