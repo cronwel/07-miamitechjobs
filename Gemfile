@@ -9,6 +9,7 @@ end
 
 gem 'rails', '~> 5.1.3'
 gem 'pg'
+gem 'rails_12factor'
 gem 'better_errors'
 gem 'devise'
 gem 'binding_of_caller'
