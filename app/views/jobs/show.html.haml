@@ -8,8 +8,9 @@
     %p
     Submitted by
     = @job.user.email
-    %p= @job.created_at
-    %button.btn.btn-default= link_to "Apply for Job", @job.url
+    %p
+    %a= @job.url
+    %button.btn.btn-default= link_to "Apply for Job", link_to @job.url
 
 #links
   = link_to "Back", root_path, class: "btn btn-sm btn-default"
